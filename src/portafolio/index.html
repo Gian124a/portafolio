@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="relative h-[75px] px-8 z-50 bg-[#0f0b83] flex justify-between">
+
+        <div class="flex justify-center items-center">
+            <img class="w-[200px]" src="static/ico/Logo.svg" alt="">
+        </div>
+
+       <nav class="w-[50em] flex justify-around items-center font-[poppins] font-medium text-white text-[16px]">
+            <a href="" class="flex items-center"><img class="mr-1" src="static/ico/Vector.svg" alt="">
+                User
+            </a>
+            <a href="" class="flex items-center"><img class="mr-1" src="static/ico/hugeicons_computer-programming-01.svg" alt="">
+                Lenguajes
+            </a>
+            <a href="" class="flex items-center"><img class="mr-1" src="static/ico/hugeicons_react.svg" alt="">
+                Frameworks
+            </a>
+            <a href="" class="flex items-center"><img class="mr-1" src="static/ico/Vector (1).svg" alt="">
+                Proyectos
+            </a>
+        </nav>
+
+    </header>
+
+    <main class="relative flex flex-col h-auto">
+
+        <section class="relative h-[757px] overflow-y-hidden px-[100px]">
+
+            <div class="relative flex top-[100px]">
+
+                <article class="relative  max-w-[50%] flex flex-col font-[poppins]">
+
+                    <div class="mb-3">
+                        <h1 class="text-[92px] leading-[110px] text-[#2871DE] font-extrabold">
+                            Gianfranco Muñoz
+                        </h1>
+                    </div>
+
+                    <div class="mb-7">
+                        <p class="text-[20px] font-medium">
+                            Soy Gianfranco Muñoz, un amante del fútbol y 
+                            especializado en programación frontend, con 20 años 
+                            de edad. Con una mente creativa y curiosa, disfruto 
+                            desarrollando soluciones innovadoras. Además de 
+                            mi especialización en frontend, tengo conocimientos 
+                            en diversas tecnologías y lenguajes de 
+                            programación. ¡Estoy emocionado por lo que el futuro 
+                            me depara y los desafíos por venir!
+                        </p>
+                    </div>
+
+                    <div class="relative flex">
+                        <a href="" class="bg-[#2871DE] text-white py-3 px-2 rounded-xl">
+                            informacion
+                        </a>
+                    </div>
+                </article>
+
+                <article class="relative flex-1 z-10">
+                    <div class="absolute top-0 bottom-0 left-0 right-0 m-auto w-[440px] h-[440px] bg-[#2871DE] rounded-[50%]">
+                        <!-- <div class="absolute bottom-0 w-full h-[100px] bg-green-500 z-20"></div> -->
+                        <img class="absolute  left-0 right-[30px] bottom-[38px] mx-auto w-[400px]" src="static/img/png-transparent-graphy-man-with-crossed-arms-clothing-shirt-shirt-chemistry-arm-business-thumbnail-removebg-preview.png" alt="">
+                    </div>
+                    <div class="absolute top-0 bottom-[100px] left-0 right-0 m-auto w-[440px] h-[440px] rounded-[50%] z-[-1] bg-[#FF4409] opacity-60"></div>
+                    <div class="absolute top-0 bottom-[-100px] left-0 right-0 m-auto w-[440px] h-[440px] rounded-[50%] z-[-1] bg-[#FFF968] opacity-70"></div>
+                </article>
+
+            </div>
+
+            <div class="absolute left-[-70px] top-[-50px] z-10 w-[190px] h-[190px] rounded-[50%] bg-[#5C88FA]"></div>
+            <div class="absolute left-[-50px] top-[-40px] z-0 w-[190px] h-[190px] rounded-[50%] bg-[#FFF968] opacity-70"></div>
+            <div class="absolute right-[500px] bottom-[-120px] z-10 w-[220px] h-[220px] rounded-[50%] bg-[#5C88FA]"></div>
+            <div class="absolute right-[530px] bottom-[-105px] z-0 w-[220px] h-[220px] rounded-[50%] bg-[#FFF968] opacity-70"></div>
+
+        </section>
+
+        <section class="h-[auto] flex flex-col">
+
+            <article class="bg-[#5C88FA] h-[70px] m-2 flex justify-center items-center">
+                <h1 class="text-[40px] font-[poppins] font-extrabold text-white">
+                    Lenguajes que manejo
+                </h1>
+            </article>
+
+            <article id="" class="relative flex-1 pl-[40px]">
+
+                <button onclick="Izquierda('content')" id="flechaIzquierda" class="z-30 absolute top-0 bottom-0 left-[40px] border-2 border-white my-auto w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-blue-400">
+                    <img class="w-[15px] rotate-[180deg]" src="static/ico/Vector (5).svg" alt="">
+                </button>
+                <button  onclick="Derecha('content')" id="flechaDerecha" class="z-30 absolute top-0 bottom-0 right-[40px] border-2 border-white my-auto w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-blue-400">
+                    <img class="w-[15px]" src="static/ico/Vector (5).svg" alt="">
+                </button>
+
+                <div id="content" class="relative flex items-center flex-nowrap h-[400px] p-[30px] overflow-x-hidden">
+                    <div onclick="Carta('carta', 'tira')" id="carta_boton" class="relative min-w-[300px] h-[220px] flex mr-[100px]">
+                    
+                        <div class="w-[220px] z-10 h-[220px] rounded-xl bg-white flex flex-col shadow-md">
+                            <div class="pt-6 flex justify-center items-center">
+                                <div class="relative w-[100px] h-[100px] bg-orange-500 rounded-[50%]">
+                                    <img class="absolute top-0 left-0 bottom-0 right-0 m-auto w-[50px]" src="static/ico/Vector (3).svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-center items-center">
+                                <p class="text-[30px] font-semibold font-[poppins]">
+                                    HTML
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="carta" class="absolute flex left-0 bottom-0 top-0 my-auto bg-white w-[220px] max-h-[210px] overflow-hidden rounded-xl px-6 py-4 shadow-lg">
+                            <p class="font-[poppins] font-medium">Durante el último año, he adquirido una sólida base en HTML5, especializándome en la construcción de estructuras semánticas y accesibles. He desarrollado múltiples proyectos, desde sitios web personales, como proyectos, he incluso websites</p>
+                        </div>
+    
+                        <div id="tira" class="absolute top-0 right-[10px] bottom-0 m-auto w-[70px] h-[40px] rounded-r-[20px] bg-orange-500"></div>
+    
+                    </div>
+                
+                    <div onclick="Carta('carta2', 'tira2')" class="relative min-w-[300px] h-[220px] flex mr-[100px]">
+                        
+                        <div class="w-[220px] z-10 h-[220px] rounded-xl bg-white flex flex-col shadow-md">
+                            <div class="pt-6 flex justify-center items-center">
+                                <div class="relative w-[100px] h-[100px] bg-blue-500 rounded-[50%]">
+                                    <img class="absolute top-0 left-0 bottom-0 right-0 m-auto w-[50px]" src="static/ico/Vector (2).svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-center items-center">
+                                <p class="text-[30px] font-semibold font-[poppins]">
+                                    CSS
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="carta2" class="absolute left-0 bottom-0 top-0 my-auto overflow-hidden bg-white w-[220px] h-[210px] rounded-xl px-6 py-4 shadow-lg">
+                            <p class="font-[poppins] font-medium">
+                                Con un año de experiencia en CSS, he desarrollado sólidas habilidades en maquetación y diseño de interfaces de usuario.
+                                He trabajado con una amplia variedad de selectores, propiedades y técnicas para crear diseños responsivos y adaptables 
+                                a diferentes dispositivos.
+                            </p>
+                        </div>
+    
+                        <div id="tira2" class="absolute top-0 right-[10px] bottom-0 m-auto w-[70px] h-[40px] rounded-r-[20px] bg-blue-500"></div>
+    
+                    </div>
+    
+                    <div onclick="Carta('carta3', 'tira3')" class="relative min-w-[300px] h-[220px] flex mr-[100px]">
+                        
+                        <div class="w-[220px] z-10 h-[220px] rounded-xl bg-white flex flex-col shadow-md">
+                            <div class="pt-6 flex justify-center items-center">
+                                <div class="relative w-[100px] h-[100px] bg-[#282a39] rounded-[50%]">
+                                    <img class="absolute top-0 left-0 bottom-0 right-0 m-auto w-[50px]" src="static/ico/Vector (4).svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-center items-center">
+                                <p class="text-[30px] font-semibold font-[poppins]">
+                                    JS
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="carta3" class="absolute left-0 bottom-0 top-0 my-auto overflow-hidden bg-white w-[220px] h-[180px] rounded-xl px-6 py-4 shadow-lg">
+                            <p class="font-[poppins] font-medium">
+                                Durante el último año, me he especializado en el desarrollo frontend, creando interfaces de usuario intuitivas y
+                                atractivas. He utilizado HTML, CSS y JavaScript para diseñar y desarrollar páginas web responsivas y adaptables 
+                                a diferentes dispositivos.
+                            </p>
+                        </div>
+    
+                        <div id="tira3" class="absolute top-0 right-[10px] bottom-0 m-auto w-[70px] h-[40px] rounded-r-[20px] bg-[#FFF968]"></div>
+    
+                    </div>
+    
+                    <div onclick="Carta('carta4', 'tira4')" class="relative min-w-[300px] h-[220px] flex mr-[100px]">
+                        
+                        <div class="w-[220px] z-10 h-[220px] rounded-xl bg-white flex flex-col shadow-md">
+                            <div class="pt-6 flex justify-center items-center">
+                                <div class="relative w-[100px] h-[100px] bg-[#282a39] rounded-[50%]">
+                                    <img class="absolute top-0 left-0 bottom-0 right-0 m-auto w-[50px]" src="static/ico/Group 13.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-center items-center">
+                                <p class="text-[30px] font-semibold font-[poppins]">
+                                    python
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="carta4" class="absolute left-0 bottom-0 top-0 my-auto overflow-hidden bg-white w-[220px] h-[180px] rounded-xl px-6 py-4 shadow-lg">
+                            <p class="font-[poppins] font-medium">
+                                Estoy desarrollando mis habilidades en Python y Django a través de la creación de proyectos 
+                                personales. He construido aplicaciones web básicas para poner en práctica los conceptos aprendidos
+                            </p>
+                        </div>
+    
+                        <div id="tira4" class="absolute top-0 right-[10px] bottom-0 m-auto w-[70px] h-[40px] rounded-r-[20px] bg-[#FFF968]"></div>
+    
+                    </div>
+    
+                </div>
+
+            </article>
+
+        </section>
+        <section class="h-[auto] flex flex-col">
+
+            <article class="bg-[#5C88FA] h-[70px] m-2 flex justify-center items-center">
+                <h1 class="text-[40px] font-[poppins] font-extrabold text-white">
+                    Frameworks que manejo
+                </h1>
+            </article>
+
+            <article id="" class="relative flex-1 pl-[40px]">
+
+                <button onclick="Izquierda('content2')" id="flechaIzquierda" class="z-30 absolute top-0 bottom-0 left-[40px] border-2 border-white my-auto w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-blue-400">
+                    <img class="w-[15px] rotate-[180deg]" src="static/ico/Vector (5).svg" alt="">
+                </button>
+                <button onclick="Derecha('content2')" id="flechaDerecha" class="z-30 absolute top-0 bottom-0 right-[40px] border-2 border-white my-auto w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-blue-400">
+                    <img class="w-[15px]" src="static/ico/Vector (5).svg" alt="">
+                </button>
+
+                <div id="content2" class="relative flex items-center flex-nowrap h-[400px] p-[30px] overflow-x-hidden">
+                    <div onclick="Carta('carta', 'tira')" id="carta_boton" class="relative min-w-[300px] h-[220px] flex mr-[100px]">
+                    
+                        <div class="w-[220px] z-10 h-[220px] rounded-xl bg-white flex flex-col shadow-md">
+                            <div class="pt-6 flex justify-center items-center">
+                                <div class="relative w-[100px] h-[100px] bg-blue-500 rounded-[50%]">
+                                    <img class="absolute top-0 left-0 bottom-0 text-white right-0 m-auto w-[50px]" src="static/ico/Vector (11).svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-center items-center">
+                                <p class="text-[30px] font-semibold font-[poppins]">
+                                    Tailwind
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="carta" class="absolute flex left-0 bottom-0 top-0 my-auto bg-white w-[220px] max-h-[210px] overflow-hidden rounded-xl px-6 py-4 shadow-lg">
+                            <p class="font-[poppins] font-medium">
+                                Durante el último año, he adquirido una sólida base en HTML5, especializándome en la 
+                                construcción de estructuras semánticas y accesibles. He desarrollado múltiples proyectos, 
+                                desde sitios web personales, como proyectos, he incluso websites</p>
+                        </div>
+    
+                        <div id="tira" class="absolute top-0 right-[10px] bottom-0 m-auto w-[70px] h-[40px] rounded-r-[20px] bg-blue-500"></div>
+    
+                    </div>
+
+                    <div onclick="Carta('carta', 'tira')" id="carta_boton" class="relative min-w-[300px] h-[220px] flex mr-[100px]">
+                        
+                        <div class="w-[220px] z-10 h-[220px] rounded-xl bg-white flex flex-col shadow-md">
+                            <div class="pt-6 flex justify-center items-center">
+                                <div class="relative w-[100px] h-[100px] bg-red-500 rounded-[50%]">
+                                    <img class="absolute top-0 left-0 bottom-0 right-0 m-auto w-[50px]" src="static/ico/Vector (10).svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-center items-center">
+                                <p class="text-[30px] font-semibold font-[poppins]">
+                                    Angular
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="carta" class="absolute flex left-0 bottom-0 top-0 my-auto bg-white w-[220px] max-h-[210px] overflow-hidden rounded-xl px-6 py-4 shadow-lg">
+                            <p class="font-[poppins] font-medium">
+                                Durante el último año, he adquirido una sólida base en HTML5, especializándome en 
+                                la construcción de estructuras semánticas y accesibles. He desarrollado múltiples proyectos, desde sitios web personales,
+                                como proyectos, he incluso websites
+                            </p>
+                        </div>
+    
+                        <div id="tira" class="absolute top-0 right-[10px] bottom-0 m-auto w-[70px] h-[40px] rounded-r-[20px] bg-red-500"></div>
+    
+                    </div>
+                    <div onclick="Carta('carta', 'tira')" id="carta_boton" class="relative min-w-[300px] h-[220px] flex mr-[100px]">
+                        
+                        <div class="w-[220px] z-10 h-[220px] rounded-xl bg-white flex flex-col shadow-md">
+                            <div class="pt-6 flex justify-center items-center">
+                                <div class="relative w-[100px] h-[100px] bg-purple-600 rounded-[50%]">
+                                    <img class="absolute top-0 left-0 bottom-0 right-0 m-auto w-[50px]" src="static/ico/Vector (9).svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-center items-center">
+                                <p class="text-[30px] font-semibold font-[poppins]">
+                                    Bootstrap
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="carta" class="absolute flex left-0 bottom-0 top-0 my-auto bg-white w-[220px] max-h-[210px] overflow-hidden rounded-xl px-6 py-4 shadow-lg">
+                            <p class="font-[poppins] font-medium">
+                                Durante el último año, he adquirido una sólida base en HTML5, especializándome
+                                en la construcción de estructuras semánticas y accesibles. He desarrollado múltiples proyectos, desde sitios web
+                                personales, como proyectos, he incluso websites
+                            </p>
+                        </div>
+    
+                        <div id="tira" class="absolute top-0 right-[10px] bottom-0 m-auto w-[70px] h-[40px] rounded-r-[20px] bg-purple-600"></div>
+    
+                    </div>
+    
+                    <div onclick="Carta('carta2', 'tira2')" class="relative min-w-[300px] h-[220px] flex mr-[100px]">
+                        
+                        <div class="w-[220px] z-10 h-[220px] rounded-xl bg-white flex flex-col shadow-md">
+                            <div class="pt-6 flex justify-center items-center">
+                                <div class="relative w-[100px] h-[100px] bg-green-600 rounded-[50%]">
+                                    <img class="absolute top-0 left-0 bottom-0 right-0 m-auto w-[50px]" src="static/ico/akar-icons_django-fill.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-center items-center">
+                                <p class="text-[30px] font-semibold font-[poppins]">
+                                    Django
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="carta2" class="absolute left-0 bottom-0 top-0 my-auto overflow-hidden bg-white w-[220px] h-[210px] rounded-xl px-6 py-4 shadow-lg">
+                            <p class="font-[poppins] font-medium">
+                                Con un año de experiencia en CSS, he desarrollado sólidas habilidades en maquetación
+                                y diseño de interfaces de usuario. He trabajado con una amplia variedad de selectores, propiedades y técnicas para
+                                crear diseños responsivos y adaptables a diferentes dispositivos.
+                            </p>
+                        </div>
+    
+                        <div id="tira2" class="absolute top-0 right-[10px] bottom-0 m-auto w-[70px] h-[40px] rounded-r-[20px] bg-green-600"></div>
+    
+                    </div>
+    
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="h-[auto] flex flex-col">
+
+            <article class="bg-[#5C88FA] h-[70px] m-2 flex justify-center items-center">
+                <h1 class="text-[40px] font-[poppins] font-extrabold text-white">
+                    Proyectos hechos por mi
+                </h1>
+            </article>
+
+            <article class="relative flex-1 px-[30px]">
+
+                <button onclick="Izquierda('content3')" id="flechaIzquierda" class="z-30 absolute top-0 bottom-0 left-[40px] border-2 border-white my-auto w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-blue-400">
+                    <img class="w-[15px] rotate-[180deg]" src="static/ico/Vector (5).svg" alt="">
+                </button>
+
+                <button onclick="Derecha('content3')" id="flechaDerecha" class="z-30 absolute top-0 bottom-0 right-[40px] border-2 border-white my-auto w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-blue-400">
+                    <img class="w-[15px]" src="static/ico/Vector (5).svg" alt="">
+                </button>
+
+                <div id="content3" class="relative flex items-center flex-nowrap h-[400px] p-[30px] overflow-x-hidden font-[poppins]">
+
+                    <div class="overflow-hidden min-w-[260px] h-[320px] rounded-xl flex flex-col bg-white shadow-lg mr-[100px]">
+
+                        <div class="h-[140px] flex flex-col bg-blue-500 rounded-b-[30px]">
+
+                            <div class=" h-[80%] flex justify-center items-center ">
+                                <div class="w-[80px] h-[80px] rounded-[50%] bg-white">
+                                    <img src="" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex items-start justify-center font-[poppins] font-semibold flex-1 text-white">
+                                <h1>
+                                    Website
+                                </h1>
+                            </div>
+
+                        </div>  
+
+                        <div class="flex-1 flex flex-col">
+
+                            <div class="flex-1 text-center py-[10px] px-[20px] text-[14px]">
+                                <p>
+                                    mi proyecto trata sobre la ingenieria de los pajaros dañados por el medio ambiente y prohibidos en la naturaleza
+                                </p>
+                            </div>
+                            <div class="h-[60px] flex justify-center items-center">
+                                <a href="#" class="px-4 py-2 bg-blue-500 text-[15px] text-white rounded-lg">
+                                    Ver proyecto
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden min-w-[260px] h-[320px] rounded-xl flex flex-col bg-white shadow-lg mr-[100px]">
+                        <div class="h-[140px] flex flex-col bg-blue-500 rounded-b-[30px]">
+                            <div class=" h-[80%] flex justify-center items-center ">
+                                <div class="w-[80px] h-[80px] rounded-[50%] bg-white">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="flex items-start justify-center font-[poppins] font-semibold flex-1 text-white">
+                                <h1>
+                                    Website
+                                </h1>
+                            </div>
+                        </div>  
+                        <div class="flex-1 flex flex-col">
+                            <div class="flex-1 text-center py-[10px] px-[20px] text-[14px]">
+                                <p>
+                                    mi proyecto trata sobre la ingenieria de los pajaros dañados por el medio ambiente y prohibidos en la naturaleza
+                                </p>
+                            </div>
+                            <div class="h-[60px] flex justify-center items-center">
+                                <a href="#" class="px-4 py-2 bg-blue-500 text-[15px] text-white rounded-lg">
+                                    Ver proyecto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden min-w-[260px] h-[320px] rounded-xl flex flex-col bg-white shadow-lg mr-[100px]">
+                        <div class="h-[140px] flex flex-col bg-blue-500 rounded-b-[30px]">
+                            <div class=" h-[80%] flex justify-center items-center ">
+                                <div class="w-[80px] h-[80px] rounded-[50%] bg-white">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="flex items-start justify-center font-[poppins] font-semibold flex-1 text-white">
+                                <h1>
+                                    Website
+                                </h1>
+                            </div>
+                        </div>  
+                        <div class="flex-1 flex flex-col">
+                            <div class="flex-1 text-center py-[10px] px-[20px] text-[14px]">
+                                <p>
+                                    mi proyecto trata sobre la ingenieria de los pajaros dañados por el medio ambiente y prohibidos en la naturaleza
+                                </p>
+                            </div>
+                            <div class="h-[60px] flex justify-center items-center">
+                                <a href="#" class="px-4 py-2 bg-blue-500 text-[15px] text-white rounded-lg">
+                                    Ver proyecto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden min-w-[260px] h-[320px] rounded-xl flex flex-col bg-white shadow-lg">
+                        <div class="h-[140px] flex flex-col bg-blue-500 rounded-b-[30px]">
+                            <div class=" h-[80%] flex justify-center items-center ">
+                                <div class="w-[80px] h-[80px] rounded-[50%] bg-white">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="flex items-start justify-center font-[poppins] font-semibold flex-1 text-white">
+                                <h1>
+                                    Website
+                                </h1>
+                            </div>
+                        </div>  
+                        <div class="flex-1 flex flex-col">
+                            <div class="flex-1 text-center py-[10px] px-[20px] text-[14px]">
+                                <p>
+                                    mi proyecto trata sobre la ingenieria de los pajaros dañados por el medio ambiente y prohibidos en la naturaleza
+                                </p>
+                            </div>
+                            <div class="h-[60px] flex justify-center items-center">
+                                <a href="#" class="px-4 py-2 bg-blue-500 text-[15px] text-white rounded-lg">
+                                    Ver proyecto
+                                </a>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+
+                
+
+            </article>
+        </section>
+
+
+        <footer class="w-full h-[320px] flex flex-col bg-[#2C2D32] font-[poppins] text-gray-400">
+            <div class="bg-blue-600 pl-[50px]">
+                <img src="static/ico/Logo.svg" alt="">
+            </div>
+            <div class=" flex-1 flex justify-center items-center">
+                <div class="w-[80%]">
+                    <div class="flex justify-between py-2 border-b-2 border-gray-100">
+                        <p class="">Cosas para ver en Portafolio:</p>
+
+                        <div class="w-[200px] flex justify-between items-center">
+                            <img src="static/ico/logos_tiktok-icon.svg" alt="">
+                            <img src="static/ico/Facebook.svg" alt="">
+                            <img src="static/ico/Whatsapp.svg" alt="">
+                            <img src="static/ico/instagram.svg" alt="">
+                            <img src="static/ico/twitter.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between py-3 border-b-2 border-gray-500">
+                        <div class="w-[600px] flex flex-col justify-evenly">
+                            <div class=" flex justify-between">
+                                <a class="" href="">Sobre Gianfranco</a>
+                                <a class="" href="">Terminos y uso</a>
+                                <a class="" href="">Politica y privacidad</a>
+                            </div>
+                            <div class="flex justify-between text-white">
+                                <a href="" class="flex items-center"><img class="mr-2" src="static/ico/Vector.svg" alt="">
+                                    User
+                                </a>
+                                <a href="" class="flex items-center"><img class="mr-2" src="static/ico/hugeicons_computer-programming-01.svg" alt="">
+                                    Lenguajes
+                                </a>
+                                <a href="" class="flex items-center"><img class="mr-2" src="static/ico/hugeicons_react.svg" alt="">
+                                    Frameworks
+                                </a>
+                                <a href="" class="flex items-center"><img class="mr-2" src="static/ico/Vector (1).svg" alt="">
+                                    Proyectos
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-[300px]">
+                            <p>
+                                Barquisimeto, estado Lara, Cabudare, La piedad norte, Urbanizacion Parque Avila, Calle D, Casa D-12
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" pt-2 text-[13px]">
+                        <p>
+                            © 2024 Portafolio. El portafolio no se hace respondable del contenido de sitios externos. Lee sobre nuestra postura acerca de enlaces externos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
